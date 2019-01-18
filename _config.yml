@@ -1,0 +1,31 @@
+source: src
+destination: _site
+
+timezone: Europe/Paris
+
+name: Blog de Matthieu
+email: contact+blog@mvion.fr
+author: Matthieu Vion
+description: Notes d'un développeur ébahi.
+url: https://blog.mvion.fr
+
+social:
+    twitter: https://twitter.com/Mistermatt007
+    mastodon: https://mstdn.io/@Matthieu
+    github: https://github.com/MattMattV
+    email: contact+blog@mvion.fr
+
+seo:
+    googleVerification: lza1DyoYYkqLvSUhc5Lsrc2IwOHOvZiCHqUk_qkIohc
+
+sass:
+    load_paths: ../node_modules/@ibm/plex/scss/
+
+exclude:
+  - node_modules
+  - .gitignore
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - Dockerfile
+  - README.md

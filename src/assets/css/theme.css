@@ -1,0 +1,55 @@
+body {
+    max-width: 46rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    height: 100%;
+
+    background-color: #303030;
+    color: white;
+
+    font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+    font-size: 14px;
+}
+
+a {
+    color: #03A9F4;
+}
+
+article {
+    line-height: 1.20;
+}
+
+article > p {
+    margin-bottom: 10px;
+}
+
+article > p > img {
+    max-width: 100%;
+    width: 100%;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+p {
+    cursor: text;
+}
+
+.tiny-icon {
+    height: 1rem;
+}
+
+.warning {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border: 1px solid #F44336;
+}

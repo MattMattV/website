@@ -1,0 +1,28 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ site.name }}</title>
+    <link href="{{ site.url }}/" />
+    <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+    <author>
+        <name>{{ site.author }}</name>
+        <email>{{ site.email }}</email>
+    </author>
+    <id>{{ site.url }}/</id>
+    <generator uri="https://jekyllrb.com" version="3.8.5">Jekyll</generator>
+    <icon>/assets/favicons/favicon-32x32.png</icon>
+    <rights>© {{ 'now' | date: "%Y" }} {{ site.author }}</rights>
+
+    {% for post in site.posts %}
+    <entry>
+        <id>{{ site.url }}{{ post.url }}</id>
+        <title>{{ post.title | xml_escape }}</title>
+        <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+        <link href="{{ site.url }}{{ post.url }}" />
+        <summary>{{ post.description }}</summary>
+        <content>{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+</feed>
