@@ -9,6 +9,7 @@ date: 2018-10-25 13:36:45
 
 <div class="warning">
     <p>Attention, cet article provient de l'ancien blog.</p>
+    <p>Lisez la <a href="{% post_url 2019-14-01-Re-bienvenue %}">mise à jour</a>.</p>
 </div>
 
 Lancer un blog en 2018, voilà qui est original...
