@@ -5,6 +5,7 @@ layout: none
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ site.name }}</title>
     <link href="{{ site.url }}/" />
+    <link href="{{ site.url }}/feed.atom" rel="self" />
     <updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
     <author>
         <name>{{ site.author }}</name>
@@ -22,7 +23,7 @@ layout: none
         <updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
         <link href="{{ site.url }}{{ post.url }}" />
         <summary>{{ post.description }}</summary>
-        <content>{{ post.content | xml_escape }}</content>
+        <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
 </feed>
