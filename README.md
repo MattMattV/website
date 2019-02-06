@@ -1,6 +1,6 @@
 # Matthieu's Blog
 
-[![Travis-CI build Status](https://img.shields.io/travis/com/mattmattv/blog.svg?logo=travis&style=for-the-badge)](https://travis-ci.com/MattMattV/blog) ![](https://img.shields.io/david/mattmattv/blog.svg?style=for-the-badge&label=NPM%20Dependencies)
+[![Travis-CI build Status](https://img.shields.io/travis/com/MattMattV/blog.svg?logo=travis&style=for-the-badge)](https://travis-ci.com/MattMattV/blog) ![](https://img.shields.io/david/mattmattv/blog.svg?style=for-the-badge&label=NPM%20Dependencies)
 
 Welcome to the repository containing my blog's source files !
 
