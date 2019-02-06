@@ -15,7 +15,7 @@ Pour remplacer Ghost, mon choix s'est donc porté sur [Jekyll][jekyll], qui en p
 
 Un petit problème que j'ai rencontré et que personne d'autre ne semble avoir, c'est de pouvoir inclure **certains** fichiers depuis des paquets NPM. Comme, par exemple, la police [IBM Plex][ibm-plex], ou encore les [icônes][tiny-icons] que j'utilise en pied de page. La solution la plus basique étant de copier le dossier `node_modules` à côté du site Jekyll généré, ce qui n'est ni très élégant, ni très optimal. J'ai donc utilisé [Gulp][gulp], créé quelques tâche pour copier les quelques fichiers, une tâche pour lancer un serveur HTTP pour la prévisualisation et TADA 🎉 !
 
-Si vous tenez vraiment à savoir comment tout est implémenté, vous pouvez consulter mon [`gulpfile`](gulpfile).
+Si vous tenez vraiment à savoir comment tout est implémenté, vous pouvez consulter mon [`gulpfile`][gulpfile].
 
 J'espère pouvoir continuer à améliorer ce site pour y ajouter ma biographie ou encore mon <acronym title="Curriculum vitae">CV</acronym>.
 
