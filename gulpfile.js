@@ -24,9 +24,9 @@ const css = () => {
 // Copy some icons into the blog
 const icons = () => {
     const iconPaths = [
-        "./node_modules/super-tiny-icons/images/svg/discord.svg",
         "./node_modules/super-tiny-icons/images/svg/email.svg",
         "./node_modules/super-tiny-icons/images/svg/github.svg",
+        "./node_modules/super-tiny-icons/images/svg/keybase.svg",
         "./node_modules/super-tiny-icons/images/svg/linkedin.svg",
         "./node_modules/super-tiny-icons/images/svg/mastodon.svg",
         "./node_modules/super-tiny-icons/images/svg/rss.svg",
