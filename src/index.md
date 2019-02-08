@@ -8,7 +8,21 @@ description: Page d'accueil
 
 <hr>
 
-<h3>Articles</h3>
+<nav>
+    🏠 <a href="/">Accueil</a>
+
+    |
+
+    📈 <a href="/stats">Statistiques</a>
+
+    |
+
+    ❓ <a href="/about.html">À propos</a>
+</nav>
+
+<hr>
+
+<h2>Articles</h2>
 <p>
     <img class="tiny-icon" alt="Logo de la syndication du contenu (RSS/Atom)" src="/assets/img/rss.svg">
     <a href="/feed.atom">
