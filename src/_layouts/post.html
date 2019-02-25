@@ -9,3 +9,16 @@ layout: default
 <article>
     {{ content }}
 </article>
+
+<hr>
+
+<section>
+    <p>Continuer la lecture :</p>
+    {% if page.previous.url %}
+    <a class="previous-aricle" href="{{page.previous.url}}">&#8592; {{page.previous.title}}</a>
+    {% endif %}
+
+    {% if page.next.url %}
+    <a class="next-article" href="{{page.next.url}}">{{page.next.title}} &#8594;</a>
+    {% endif %}
+</section>
