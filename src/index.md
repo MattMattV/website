@@ -24,7 +24,7 @@ description: Page d'accueil
 
 <h2>Articles</h2>
 <p>
-    <img class="tiny-icon" alt="Logo de la syndication du contenu (RSS/Atom)" src="/assets/img/rss.svg">
+    <img class="tiny-icon" alt="Logo de la syndication du contenu (Atom)" src="/assets/img/rss.svg">
     <a href="/feed.atom">
         Flux Atom
     </a>
