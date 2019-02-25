@@ -1,5 +1,5 @@
 body {
-    max-width: 46rem;
+    max-width: 50rem;
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -13,7 +13,7 @@ body {
     color: white;
 
     font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 a {
