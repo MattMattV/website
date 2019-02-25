@@ -2,9 +2,8 @@
 layout: post
 title: Re-bienvenue !
 description: Désolé, je n'ai pas pu m'empêcher de tout casser...
-author: Matthieu Vion
 category: meta
-date: 2018-01-14 13:41:00
+date: 2019-01-14
 ---
 
 Pardon, je n'ai pas pu m'empêcher de tout casser pour tout refaire "à la main"…

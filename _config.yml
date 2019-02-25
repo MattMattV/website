@@ -1,6 +1,13 @@
 source: src
 destination: _site
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      author: Matthieu Vion
+
 timezone: Europe/Paris
 
 name: Blog de Matthieu

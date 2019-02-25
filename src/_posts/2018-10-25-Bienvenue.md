@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Bienvenue !
-description: Les raisons quei me poussent à lancer un blog
-author: Matthieu Vion
+description: Les raisons qui me poussent à lancer un blog
 category: meta
-date: 2018-10-25 13:36:45
+date: 2018-10-25
 ---
 
 <div class="warning">
     <p>Attention, cet article provient de l'ancien blog.</p>
-    <p>Lisez la <a href="{% post_url 2019-14-01-Re-bienvenue %}">mise à jour</a>.</p>
+    <p>Lisez la <a href="{% post_url 2019-01-14-Re-bienvenue %}">mise à jour</a>.</p>
 </div>
 
 Lancer un blog en 2018, voilà qui est original...
