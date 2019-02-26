@@ -18,9 +18,9 @@ _btw you use Arch ?_
 
 <br>
 
-Et bien maintenant, vous pouvez me communiquer tout cela un peu plus bas grâce à [Commento][commento], une platfeorme de commentaire toute fraîche, que j'ai pu découvrir sur [Lobsters][lobsters].
+Et bien maintenant, vous pouvez me communiquer tout cela un peu plus bas grâce à [Commento][commento], une plateforme de commentaire toute fraîche, que j'ai pu découvrir sur [Lobsters][lobsters].
 
-C'est une solution libre et open source qui est assez méconnue je pense, qui mériterait d'être un peu plus de reconnaissance. Le projet a même reçu une récompense de 19000$ de la part de Mozilla ! ([communiqué de presse][mozilla-press])
+C'est une solution libre et open source qui est assez méconnue je pense, qui mériterait un peu plus de reconnaissance. Le projet a même reçu une récompense de 19000$ de la part de Mozilla ! ([communiqué de presse][mozilla-press])
 
 Je me suis permis, en attendant le support des thèmes, d'appliquer [mon propre thème sombre][commento-dark] 🙂
 
