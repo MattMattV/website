@@ -30,7 +30,7 @@ description: Page d'accueil
     </a>
 </p>
 <ul>
-    {% for post in site.posts reversed %}
+    {% for post in site.posts %}
     <li>
         {{ post.date | date: "%d/%m/%Y" }}
         <a href="{{ post.url }}">{{ post.title }}</a>
