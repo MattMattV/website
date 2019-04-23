@@ -43,10 +43,12 @@ const fonts = () => {
         .pipe(dest("./_site/assets/fonts/Plex/"));
 };
 
-const serve = () => {
+const serve = async () => {
     browserSync.init({
         server: "./_site",
     });
+
+    await execa("jekyll", ["build"]);
 
     return watch("./src/**/*", series(incrementalBuild, parallel(css, icons, fonts)));
 };
