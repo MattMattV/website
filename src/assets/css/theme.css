@@ -33,6 +33,12 @@ article > p > img {
     width: 100%;
 }
 
+code {
+    background-color: #202020;
+    border-radius: 5px;
+    border: 1px solid #505050
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
