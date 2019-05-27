@@ -2,4 +2,6 @@
 ---
 
 $font-prefix: "../fonts/Plex";
-@import 'ibm-plex.scss';
+@import 'mono/index';
+@import 'sans/index';
+@import 'sans-condensed/index';
