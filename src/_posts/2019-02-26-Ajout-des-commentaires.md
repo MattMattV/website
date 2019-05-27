@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ajout des commentaire
+title: Ajout des commentaires
 description: Venez faire entendre votre voix !
 category: meta
 date: 2019-02-26
