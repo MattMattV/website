@@ -28,6 +28,8 @@ Pour le moment, ce site ne contient pas de JavaScript.
 
 Pour tout commentaire ou suggestion, n'hésitez pas à me contacter sur les réseaux sociaux, par email, par Keybase, ou bien grâce à une issue [GitHub][gh-issues] ou [GitLab][gl-issues].
 
+Motif d'arrière plan ["Topography"](https://www.heropatterns.com/) par [Steve Schoger](https://twitter.com/steveschoger) sous licence [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
+
 ## Les badges !
 
 Dernier commit sur le dépôt : ![badge indiquant le dernier commit sur le dépôt Git](https://img.shields.io/github/last-commit/MattMattV/blog.svg?logo=git&style=for-the-badge)
