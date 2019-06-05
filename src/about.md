@@ -38,7 +38,7 @@ Status de l'intégration continue : ![badge indiquant le status du dernier build
 
 Note de l'observatoire Mozilla : ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/blog.mvion.fr.svg?publish&style=for-the-badge)
 
-<a href="https://validator.w3.org/feed/check.cgi?url=https%3A//blog.mvion.fr/feed.atom">
+Validité du flux Atom : <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//blog.mvion.fr/feed.atom">
     <img src="/assets/img/valid-atom.png" alt="[Valid Atom 1.0 Feed]" title="Validate my Atom 1.0 feed">
 </a>
 
