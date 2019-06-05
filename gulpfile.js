@@ -88,4 +88,4 @@ exports.fonts = fonts;
 exports.icons = icons;
 
 exports.serve = series(incrementalBuild, assets, serve);
-exports.build = series(assets, sri, minification);
+exports.build = series(assets, minification);
