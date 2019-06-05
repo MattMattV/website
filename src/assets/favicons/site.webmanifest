@@ -1,6 +1,9 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Blog de Matthieu",
+    "short_name": "MV Blog",
+    "description": "Blog personnel de Matthieu Vion",
+    "lang": "fr",
+    "start_url": "/",
     "icons": [
         {
             "src": "/assets/favicons/android-chrome-192x192.png",
@@ -8,7 +11,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    "theme_color": "#03A9F4",
+    "background_color": "#303030",
+    "display": "browser"
 }
