@@ -1,11 +1,12 @@
 const { src, dest, series, parallel, watch } = require("gulp");
 
+const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const concatCSS = require('gulp-concat-css');
-
-
-const browserSync = require('browser-sync').create();
 const execa = require("execa");
+const htmlmin = require('gulp-htmlmin');
+const imagemin = require('gulp-imagemin');
+const sriHash = require('gulp-sri-hash');
 
 // Concatenation, minification of 3rd party CSS
 const css = () => {
@@ -15,9 +16,6 @@ const css = () => {
 
     return src(externalCss)
         .pipe(concatCSS("vendor.css"))
-        .pipe(cleanCSS({
-            level: 2
-        }))
         .pipe(dest("./_site/assets/css/"));
 };
 
@@ -30,6 +28,7 @@ const icons = () => {
         "./node_modules/super-tiny-icons/images/svg/linkedin.svg",
         "./node_modules/super-tiny-icons/images/svg/mastodon.svg",
         "./node_modules/super-tiny-icons/images/svg/rss.svg",
+        "./node_modules/super-tiny-icons/images/svg/steam.svg",
         "./node_modules/super-tiny-icons/images/svg/twitter.svg",
     ];
 
@@ -43,15 +42,36 @@ const fonts = () => {
         .pipe(dest("./_site/assets/fonts/Plex/"));
 };
 
+const sri = () => {
+    return src("./_site/*.html")
+        .pipe(sriHash())
+        .pipe(dest("./_site/"));
+};
+
 const serve = async () => {
     browserSync.init({
         server: "./_site",
+        https: true
     });
-
-    await execa("jekyll", ["build"]);
 
     return watch("./src/**/*", series(incrementalBuild, parallel(css, icons, fonts)));
 };
+
+const minification = (done) => {
+    src('_site/**/*.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(dest('_site'))
+
+    src('_site/assets/{favicons,img}/**/*')
+        .pipe(imagemin())
+        .pipe(dest('_site/assets'))
+
+    src('_site/assets/**/*.css')
+        .pipe(cleanCSS())
+        .pipe(dest('_site/assets'))
+
+    return done()
+}
 
 const incrementalBuild = async () => {
     await execa("jekyll", ["build", "--incremental"]);
@@ -61,9 +81,11 @@ const incrementalBuild = async () => {
     return
 };
 
+assets = parallel(css, fonts, icons)
+
 exports.css = css;
 exports.fonts = fonts;
 exports.icons = icons;
 
-exports.serve = series(parallel(css, fonts, icons), serve);
-exports.build = parallel(css, fonts, icons);
+exports.serve = series(incrementalBuild, assets, serve);
+exports.build = series(assets, sri, minification);
