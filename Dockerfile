@@ -25,8 +25,7 @@ WORKDIR /home/builder
 
 COPY --from=jekyllBuilder /home/builder .
 
-RUN npm ci && \
-    npx gulp build
+RUN npx gulp build
 
 ############################
 
