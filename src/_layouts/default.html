@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <meta name="description" content="{{ page.description }}">
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self'; img-src 'self' https://img.shields.io; object-src 'none'; script-src 'self'; style-src 'self'">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self'; img-src 'self' https://img.shields.io; object-src 'none'; script-src 'self'; style-src 'self'; manifest-src 'self'">
 
         <meta name="google-site-verification" content="{{ site.seo.googleVerification }}" />
 
@@ -21,7 +22,9 @@
     </head>
 
     <body>
-        {{ content }}
+        <section>
+            {{ content }}
+        </section>
 
         <hr>
 
