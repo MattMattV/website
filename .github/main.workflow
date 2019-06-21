@@ -1,6 +1,6 @@
 workflow "Docker image" {
   on = "push"
-  resolves = ["GitHub Action for Docker"]
+  resolves = ["GitHub Action for Docker-1"]
 }
 
 action "GitHub Action for Docker" {
@@ -9,15 +9,15 @@ action "GitHub Action for Docker" {
   secrets = ["DOCKER_IMAGE_NAME"]
 }
 
-action "Docker Login" {
+action "Docker Registry" {
   uses = "actions/docker/login@master"
   needs = ["GitHub Action for Docker"]
-  secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
+  secrets = ["DOCKER_PASSWORD", "DOCKER_USERNAME"]
 }
 
 action "GitHub Action for Docker-1" {
   uses = "actions/docker/cli@master"
-  needs = ["Docker Login"]
-  args = "push $DOCKER_IMAGE_NAME"
+  needs = ["Docker Registry"]
   secrets = ["DOCKER_IMAGE_NAME"]
+  args = "push $DOCKER_IMAGE_NAME"
 }
