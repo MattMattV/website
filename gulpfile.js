@@ -42,39 +42,35 @@ const fonts = () => {
         .pipe(dest("./_site/assets/fonts/Plex/"));
 };
 
-const sri = () => {
-    return src("./_site/*.html")
-        .pipe(sriHash())
-        .pipe(dest("./_site/"));
-};
-
 const serve = async () => {
     browserSync.init({
         server: "./_site",
         https: true
     });
 
-    return watch("./src/**/*", series(incrementalBuild, parallel(css, icons, fonts)));
+    return watch("./src/**/*", series(incrementalBuild, assets));
 };
 
-const minification = (done) => {
-    src('_site/**/*.html')
-        .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(dest('_site'))
-
+const prod = (done) => {
     src('_site/assets/{favicons,img}/**/*')
         .pipe(imagemin())
-        .pipe(dest('_site/assets'))
+        .pipe(dest('_site/assets', {overwrite: true}))
 
     src('_site/assets/**/*.css')
         .pipe(cleanCSS())
-        .pipe(dest('_site/assets'))
+        .pipe(dest('_site/assets', {overwrite: true}))
+
+    src('_site/**/*.html')
+        .pipe(htmlmin({ collapseWhitespace: false }))
+        .pipe(dest('_site', {overwrite: true}))
 
     return done()
 }
 
 const incrementalBuild = async () => {
-    await execa("jekyll", ["build", "--incremental"]);
+    const {stdout} = await execa("jekyll", ["build"]);
+
+    console.log(stdout);
 
     browserSync.reload();
 
@@ -88,4 +84,4 @@ exports.fonts = fonts;
 exports.icons = icons;
 
 exports.serve = series(incrementalBuild, assets, serve);
-exports.build = series(assets, minification);
+exports.build = series(assets, prod);
