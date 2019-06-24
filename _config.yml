@@ -1,4 +1,5 @@
 source: src
+include: ['.well-known']
 destination: _site
 
 defaults:
