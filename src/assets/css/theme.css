@@ -20,7 +20,7 @@ a {
 }
 
 article {
-    line-height: 1.20;
+    line-height: 1.5;
 }
 
 article > p {
@@ -32,10 +32,12 @@ article > p > img {
     width: 100%;
 }
 
-code {
+pre {
     background-color: #202020;
     border-radius: 5px;
-    border: 1px solid #505050
+    border: 1px solid #505050;
+    padding: 5px;
+    /* overflow:; */
 }
 
 hr {
