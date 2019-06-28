@@ -3,13 +3,18 @@ layout: default
 title: Accueil
 description: Page d'accueil
 ---
-<h1>{{site.name}}</h1>
-<p>{{site.description}}</p>
+# {{site.name}}
+
+{{site.description}}
 
 <hr>
 
 <nav>
     🏠 <a href="/">Accueil</a>
+
+    |
+
+    📃 <a href="/articles.html">Articles</a>
 
     |
 
@@ -22,18 +27,6 @@ description: Page d'accueil
 
 <hr>
 
-<h2>Articles</h2>
-<p>
-    <img class="tiny-icon" alt="Logo de la syndication du contenu (Atom)" src="/assets/img/rss.svg">
-    <a href="/feed.atom">
-        Flux Atom
-    </a>
-</p>
-<ul>
-    {% for post in site.posts %}
-    <li>
-        {{ post.date | date: "%d/%m/%Y" }}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+# Bienvenue, visiteur !
+
+Bonjour et bienvenue sur mon site Web personnel !
