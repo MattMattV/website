@@ -44,8 +44,7 @@ const fonts = () => {
 
 const serve = async () => {
     browserSync.init({
-        server: "./_site",
-        https: true
+        server: "./_site"
     });
 
     return watch("./src/**/*", series(incrementalBuild, assets));
@@ -68,9 +67,7 @@ const prod = (done) => {
 }
 
 const incrementalBuild = async () => {
-    const {stdout} = await execa("jekyll", ["build"]);
-
-    console.log(stdout);
+    await execa("jekyll", ["build"]);
 
     browserSync.reload();
 
