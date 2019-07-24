@@ -6,12 +6,15 @@ body {
 
     height: 100%;
 
+    display: flex;
+    flex-direction: column;
+
     background-color: #303030;
-    background-image: url('/assets/img/topography.svg');
+    background-image: url('/svg/topography.svg');
 
     color: white;
 
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: monospace;
     font-size: 15px;
 }
 
@@ -20,6 +23,11 @@ a {
 }
 
 article {
+    width: 80ch;
+
+    margin-right: auto;
+    margin-left: auto;
+
     line-height: 1.5;
 }
 
@@ -49,36 +57,4 @@ hr {
 p {
     cursor: text;
     text-align: justify;
-}
-
-.portrait {
-    float: left;
-    height: 10rem;
-    margin-right: 1rem;
-}
-
-.navigation-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation-list li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-.next-article {
-    float: right;
-}
-
-.tiny-icon {
-    height: 1rem;
-}
-
-.warning {
-    padding-left: 5px;
-    padding-right: 5px;
-
-    border: 1px solid #F44336;
 }

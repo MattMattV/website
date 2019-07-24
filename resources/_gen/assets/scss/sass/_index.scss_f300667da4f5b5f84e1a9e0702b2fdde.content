@@ -1,0 +1,44 @@
+body {
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  background-image: url("/assets/svg/topography.svg");
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px; }
+
+a {
+  color: #03A9F4; }
+
+article {
+  width: 80ch;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.5; }
+
+article > p {
+  margin-bottom: 10px; }
+
+article > p > img {
+  max-width: 100%;
+  width: 100%; }
+
+pre {
+  background-color: #202020;
+  border-radius: 5px;
+  border: 1px solid #505050;
+  padding: 5px;
+  /* overflow:; */ }
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white; }
+
+p {
+  cursor: text;
+  text-align: justify; }

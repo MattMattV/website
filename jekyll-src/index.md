@@ -14,9 +14,14 @@ description: Page d'accueil
 
     |
 
+    💡 <a href="/projects.html">Projets</a>
+
+    |
+
     📃 <a href="/articles.html">Articles</a>
 
     |
+
 
     📈 <a href="/stats">Statistiques</a>
 

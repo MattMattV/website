@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="{{ .Description }}">
+
+        {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.RSSTitle | safeHTML }}
+        {{ end -}}
+
+        {{ if not .Site.IsServer }}
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self'; img-src 'self' https://img.shields.io; object-src 'none'; script-src 'self'; style-src 'self'; manifest-src 'self'">
+        {{ end }}
+
+        <meta name="google-site-verification" content="{{ .Site.Params.Params.seo.googleVerification }}" />
+
+        <!-- {% include favicons.html %} -->
+
+        <title>{{ .Site.Title }}</title>
+
+        {{ $sassOptions := (dict "outputStyle" "compressed" "targetPath" "style.css" "includePaths" (slice "node_modules")) }}
+        {{ $style := resources.Get "sass/_index.scss" | toCSS $sassOptions | minify }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+        <link href="/feed.atom" title="Articles du blog de Matthieu" rel="alternate" type="application/atom+xml">
+    </head>
+
+    <body>
+        <section>
+            {{ block "main" . }}{{ end }}
+        </section>
+
+        {{ partial "footer.html" . }}
+    </body>
+</html>

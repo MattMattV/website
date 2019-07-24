@@ -1,0 +1,38 @@
+baseURL = "https://blog.mvion.fr"
+
+title = "Blog de Matthieu"
+copyright = "Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International."
+languageCode = "fr-fr"
+defaultContentLanguage = "fr"
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+
+[author]
+name = "Matthieu Vion"
+
+[params]
+subtitle = "Notes d'un développeur ébahi."
+email = "contact+blog@mvion.fr"
+author = "Matthieu Vion"
+
+  [params.social]
+  twitter = "https://twitter.com/Mistermatt007"
+  mastodon = "https://mstdn.io/@Matthieu"
+  github = "https://github.com/MattMattV"
+  email = "contact+blog@mvion.fr"
+  keybase = "https://keybase.io/mvion"
+  linkedin = "https://www.linkedin.com/in/matthieu-vion"
+
+  [params.seo]
+  googleVerification = "za1DyoYYkqLvSUhc5Lsrc2IwOHOvZiCHqUk_qkIohc"
+
+[languages]
+  [languages.fr]
+  weight = 1
+  [languages.en]
+  weight = 2
+
+[blackfriday]
+  angledQuotes = true

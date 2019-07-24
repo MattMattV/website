@@ -1,0 +1,39 @@
+---
+layout: default
+title: Projets
+description: La liste des projets auxquels j'ai contribué
+---
+<a href="/">← accueil</a>
+
+<h1>Projets</h1>
+
+Retrouvez sur cette page les projets sur lesquel j'ai pu travailler !
+
+<br>
+<br>
+
+<section class="projects">
+{% for project in site.projects %}
+  <div class="project-card">
+    {{ project.name }} {% if project.repo %}/ <a href="{{ project.repo }}">Code source</a> {% endif %} <br>
+
+    {% if project.technologies %}
+    <br>
+    Outils:
+      {% for tech in project.technologies %}
+        {% if tech.url %}
+        <a href="{{tech.url}}">{{ tech.name }}</a>
+        {% else %}
+        {{ tech.name }}
+        {% endif %}
+        {% if forloop.last == false %}
+        <span >+</span>
+        {% endif %}
+      {% endfor %} <br>
+    {% endif %}
+
+    <br>
+    <a href="{{ project.url }}">Plus d'informations</a>
+  </div>
+{% endfor %}
+</section>

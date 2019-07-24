@@ -1,8 +1,3 @@
 node_modules
 
-_site
-.sass-cache
-.jekyll-metadata
-
-assets/css/vendor.css
-assets/fonts
+public

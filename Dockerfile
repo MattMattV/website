@@ -1,34 +1,16 @@
-FROM node as dependencies
+FROM ubuntu:19.10 as build
 
 WORKDIR /home/builder
 
 COPY . .
 
-RUN npm ci
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends hugo git
 
-############################
-
-FROM ruby:2.5 as jekyllBuilder
-
-WORKDIR /home/builder
-
-COPY --from=dependencies /home/builder .
-
-RUN gem install jekyll && \
-    jekyll build
-
-############################
-
-FROM node as extraSteps
-
-WORKDIR /home/builder
-
-COPY --from=jekyllBuilder /home/builder .
-
-RUN npx gulp build
+RUN hugo
 
 ############################
 
 FROM httpd
 
-COPY --from=extraSteps /home/builder/_site /usr/local/apache2/htdocs/
+COPY --from=build /home/builder/public  /usr/local/apache2/htdocs/
