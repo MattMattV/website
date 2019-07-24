@@ -1,5 +1,6 @@
 ---
 layout: about
+type: about
 title: À propos
 description: Quelques informations à propos de moi et du blog.
 images: ["favicons/android-chrome-192x192.png"]
@@ -8,7 +9,7 @@ images: ["favicons/android-chrome-192x192.png"]
 
 <img alt="Portrait en noir et blanc de Matthieu Vion" class="portrait" src="./matthieu.jpg">
 
-Je suis développeur chez [Trace Software][tsi] et auteur de ce blog. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautées que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
+:wave: Je suis développeur chez [Trace Software][tsi] et auteur de ce blog. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautées que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
 
 Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img class="tiny-icon" alt="Logo de Steam" src="/svg/steam.svg">), j'aime me balader sur [Reddit][reddit], les après-midi tranquilles et les thèmes sombres.
 
@@ -53,7 +54,7 @@ Validité du flux Atom : <a href="https://validator.w3.org/feed/check.cgi?url=ht
 [hugo]: https://gohugo.io/
 [npm]: https://www.npmjs.com/
 [caddy]: https://caddyserver.com/
-[goaccess]: https://goaccess.io/$
+[goaccess]: https://goaccess.io
 [plex-font]: https://github.com/IBM/plex
 [sanitize]: https://github.com/csstools/sanitize.css
 [STI]: https://github.com/edent/SuperTinyIcons
