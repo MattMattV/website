@@ -4,11 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="{{ .Description }}">
+        {{ template "_internal/opengraph.html" . }}
 
-        {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.RSSTitle | safeHTML }}
-        {{ end -}}
+        {{ partial "favicons.html" . }}
 
         {{ if not .Site.IsServer }}
         <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self'; img-src 'self' https://img.shields.io; object-src 'none'; script-src 'self'; style-src 'self'; manifest-src 'self'">

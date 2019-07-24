@@ -1,16 +1,16 @@
 ---
 layout: about
-type: about
 title: À propos
 description: Quelques informations à propos de moi et du blog.
+images: ["favicons/android-chrome-192x192.png"]
 ---
 # À propos de moi
 
 <img alt="Portrait en noir et blanc de Matthieu Vion" class="portrait" src="./matthieu.jpg">
 
-Je suis développeur chez [Trace Software][tsi] et auteur de ce blog. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautés que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
+Je suis développeur chez [Trace Software][tsi] et auteur de ce blog. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautées que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
 
-Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img class="tiny-icon" alt="Logo de Steam" src="/assets/img/steam.svg">), j'aime me balader sur [Reddit][reddit], les après-midi tranquilles et les thèmes sombres.
+Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img class="tiny-icon" alt="Logo de Steam" src="/svg/steam.svg">), j'aime me balader sur [Reddit][reddit], les après-midi tranquilles et les thèmes sombres.
 
 # À propos du blog
 
@@ -18,9 +18,10 @@ Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img clas
 
 Le code source du blog est versionné par [Git][git], hébergé sur [GitHub][repo-github], dupliqué sur [GitLab][repo-gitlab]. (On a jamais trop de sauvegardes 😉)
 
-Ce site est généré grâce à [Jekyll][jekyll] et [Gulp][gulp].
+Ce site est généré grâce à [Hugo][hugo].
 
 Ce site dépend des briques logicielles suivantes :
+
 - [@ibm/plex][plex-font]
 - [sanitize.css][sanitize]
 - [super-tiny-icons][STI]
@@ -32,8 +33,6 @@ Pour tout commentaire ou suggestion, n'hésitez pas à me contacter sur les rés
 ## Crédits
 
 Motif d'arrière plan ["Topography"](https://www.heropatterns.com/) par [Steve Schoger](https://twitter.com/steveschoger) sous licence [CC BY 4.0](https://creativecommons.org/licenses/by/4.0)
-
-Indication du temps de lecture grâce à l'article de [Carlos Alexandro Becker][carlos-becker] : [Jekyll: Reading time without plugins][reading-time-source]
 
 ## Les badges !
 
@@ -51,8 +50,7 @@ Validité du flux Atom : <a href="https://validator.w3.org/feed/check.cgi?url=ht
 [git]: https://git-scm.com/
 [repo-github]: https://github.com/MattMattV/blog
 [repo-gitlab]: https://gitlab.com/MattMattV/blog
-[jekyll]: https://jekyllrb.com
-[gulp]: https://gulpjs.com/
+[hugo]: https://gohugo.io/
 [npm]: https://www.npmjs.com/
 [caddy]: https://caddyserver.com/
 [goaccess]: https://goaccess.io/$
@@ -64,8 +62,6 @@ Validité du flux Atom : <a href="https://validator.w3.org/feed/check.cgi?url=ht
 [steam]: https://steamcommunity.com/id/TheMattMatt
 [reddit]: https://reddit.com
 [commits]: https://github.com/MattMattV/blog/commits/master
-[carlos-becker]: https://carlosbecker.com
-[reading-time-source]: https://carlosbecker.com/posts/jekyll-reading-time-without-plugins
 
 [commit-badge]: https://img.shields.io/github/last-commit/MattMattV/blog.svg?logo=git&style=for-the-badge
 [build-badge]: https://img.shields.io/travis/com/MattMattV/blog.svg?logo=travis&style=for-the-badge

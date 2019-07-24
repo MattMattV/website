@@ -9,6 +9,12 @@ enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 
+theme = ["hugo-atom-feed"]
+
+[outputs]
+home = ["HTML"]
+section = ["HTML", "ATOM"]
+
 [author]
 name = "Matthieu Vion"
 
@@ -35,4 +41,4 @@ author = "Matthieu Vion"
   weight = 2
 
 [blackfriday]
-  angledQuotes = true
+angledQuotes = true
