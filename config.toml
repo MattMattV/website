@@ -18,6 +18,9 @@ section = ["HTML", "ATOM"]
 [author]
 name = "Matthieu Vion"
 
+[frontmatter]
+images = ["favicons/android-chrome-192x192.png"]
+
 [params]
 subtitle = "Notes d'un développeur ébahi."
 email = "contact+blog@mvion.fr"
@@ -38,6 +41,8 @@ author = "Matthieu Vion"
   [languages.fr]
   weight = 1
   [languages.en]
+  [languages.en.blackfriday]
+      angledQuotes = false
   weight = 2
 
 [blackfriday]
