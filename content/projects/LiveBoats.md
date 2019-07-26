@@ -8,10 +8,13 @@ technologies:
 ---
 Lors du "Hackathon Smart Port Vallé de la Seine 2016" au Havre, mon équipe et moi même avons prototypé une application mobile.
 
-Le constat de départ est simple, si l'on observe la mer, on pourra voir passer tout un tas d'embarcations, mais curieux que nous sommes, nous aimerions en savoir un peu plus !
+Notre constat de départ est simple, lorsque l'on se promène en bord de mer, on peut voir passer tout un tas de bateaux, de tailles, mais que d'où viennent-ils ? Où vont-ils ? Que transportent-ils ?
 
-Notre idée, à été de
+Notre idée, à donc été de créer une application mobile qui permettrait, en temps réel, d'en apprendre plus sur les bateaux à proximité le tout en réalité augmentée.
 
-Hackathon, port du Havre
+Pour ce hackathon, l'organisation avait mis toutes sortes de resources à disposition, nous avons pu découvrir l'{{< abbr "AIS" "Automatic Identification System">}} (Système d'identification automatique), qui permet auix bateaux d'émettre tout un tas d'informations à propos d'eux.
 
-*real time*, visualisation
+Ces informations sont lisibles par n'importe qui et sont agrégées par  des entreprises comme [MarineTraffic][marine-traffic] par exemple, qui ensuite propose des API pour interroger toutes ces données.
+
+[marine-traffic]: https://www.marinetraffic.com
+
