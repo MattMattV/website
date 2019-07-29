@@ -18,7 +18,7 @@ Ces informations sont lisibles par n'importe qui et sont agrégées par  des ent
 
 En utilisant le GPS inclut dans la quasi-majorité des ordiphones, on peut récupérer la position de l'utilisateur ainsi que son orientation afin de déterminer à propos de quels bateaux l'utilisateur souhaite en apprendre un peu plus.
 
-Le tout affiché par le flux de la caméra arrière pour la réalité augmentée !
+Le tout affiché par dessus le flux de la caméra arrière pour la réalité augmentée !
 
 Ce projet à été récompensé par le [prix AIVP][blog-aivp]. :trophy:
 
