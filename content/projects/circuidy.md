@@ -9,7 +9,5 @@ technologies:
       url: https://www.typescriptlang.org
     - name: Angular
       url: https://angular.io
+wip: true
 ---
-Hackathon, tourisme,
-
-crowdsourcing, alerting

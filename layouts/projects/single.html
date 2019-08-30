@@ -3,6 +3,12 @@
 {{ partial "header.html" }}
 
 <article>
+    {{ if .Params.Wip }}
+    <div class="warning">
+        <p>Cette page est en chantier ! 👷</p>
+    </div>
+    {{ end }}
+
     <h1>{{ .Name }}</h1>
 
     {{ .Content }}
