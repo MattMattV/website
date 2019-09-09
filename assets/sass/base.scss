@@ -40,12 +40,17 @@ article > p > img {
     width: 100%;
 }
 
-pre {
-    background-color: #202020;
+pre, :not(pre) > code{
+    box-shadow:0 0 0.5em rgba(0,0,0,0.4) inset;
     border-radius: 5px;
-    border: 1px solid #505050;
-    padding: 5px;
-    /* overflow:; */
+    background:#1d2024;
+    margin-top:0.5rem;
+    font-size:0.8rem;
+    color:#bbb;
+    padding: 0.5rem;
+    line-height:0.9rem;
+    overflow:auto;
+    white-space:pre-wrap;
 }
 
 hr {
