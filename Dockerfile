@@ -1,16 +1,14 @@
-FROM ubuntu:19.10 as build
+FROM node as build
 
 WORKDIR /home/builder
 
 COPY . .
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends hugo git
-
-RUN hugo
+RUN npm ci && \
+    npm run build
 
 ############################
 
 FROM httpd
 
-COPY --from=build /home/builder/public  /usr/local/apache2/htdocs/
+COPY --from=build /home/builder/_site  /usr/local/apache2/htdocs/

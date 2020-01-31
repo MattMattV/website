@@ -1,0 +1,18 @@
+---
+layout: index
+---
+{% include header.html %}
+
+<article>
+    {% if wip == true %}
+    <div class="warning">
+        <p>Cette page est en chantier ! 👷</p>
+    </div>
+    {% else %}
+        <h1>{{ data.name }}</h1>
+
+        {{ content | safe }}
+    {% endif %}
+</article>
+
+{% include footer.html %}

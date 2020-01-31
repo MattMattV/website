@@ -1,0 +1,35 @@
+---
+layout: index
+---
+{% include header.html %}
+
+{{ content | safe }}
+
+<section class="projects">
+{% for project in collections.projects  %}
+  <div class="project-card">
+    {{ project.data.name }} {% if project.data.repo %}/ <a href="{{ project.data.repo }}">Code source</a> {% endif %} <br>
+
+    {% if project.data.technologies != null %}
+      <br>
+      Outils:
+      {% for tech in project.data.technologies %}
+        {% if tech.url %}
+          <a href="{{ tech.url }}">{{ tech.name }}</a>
+        {% else %}
+          {{ tech.name }}
+        {% endif %}
+
+        {% if forloop.index != project.data.technologies.size %}
+          <span >+</span>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    <br>
+    <br>
+    <a href="{{ project.url }}">Plus d'informations</a>
+  </div>
+{% endfor %}
+</section>
+
+{% include footer.html %}
