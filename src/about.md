@@ -28,7 +28,7 @@ Ce site dépend des briques logicielles suivantes :
 
 À ce jour, ce site que ne contient pas de JavaScript.
 
-Pour tout commentaire ou suggestion, n'hésitez pas à me contacter sur les réseaux sociaux, par email, par Keybase, ou bien grâce à une issue [GitHub][gh-issues] ou [GitLab][gl-issues].
+Pour tout commentaire ou suggestion, n'hésitez pas à me contacter sur les réseaux sociaux, par email, par Keybase, ou bien grâce à une issue [GitHub][gh-issues].
 
 ## Crédits
 
@@ -44,8 +44,8 @@ Note de l'observatoire Mozilla : ![Mozilla HTTP Observatory Grade][observatory-b
 
 [gs]: https://www.greensystemes.com/
 [git]: https://git-scm.com/
-[repo-github]: https://github.com/MattMattV/blog
-[repo-gitlab]: https://gitlab.com/MattMattV/blog
+[repo-github]: https://github.com/MattMattV/website
+[repo-gitlab]: https://gitlab.com/MattMattV/website
 [11ty]: https://www.11ty.dev
 [npm]: https://www.npmjs.com/
 [caddy]: https://caddyserver.com/
@@ -53,8 +53,7 @@ Note de l'observatoire Mozilla : ![Mozilla HTTP Observatory Grade][observatory-b
 [plex-font]: https://github.com/IBM/plex
 [sanitize]: https://github.com/csstools/sanitize.css
 [STI]: https://github.com/edent/SuperTinyIcons
-[gh-issues]: https://github.com/MattMattV/blog/issues/new
-[gl-issues]: https://gitlab.com/MattMattV/blog/issues/new
+[gh-issues]: https://github.com/MattMattV/website/issues/new
 [steam]: https://steamcommunity.com/id/TheMattMatt
 [reddit]: https://www.reddit.com
 [commits]: https://github.com/MattMattV/blog/commits/master
