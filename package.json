@@ -20,7 +20,7 @@
   "scripts": {
     "11ty:serve": "eleventy --serve",
     "11ty:build": "eleventy",
-    "check:link": "hyperlink _site/index.html --canonicalroot https://mvion.fr -r _site/index.html | tap-spot",
+    "check:link": "hyperlink _site/index.html --canonicalroot https://mvion.fr | tap-spot",
     "prebuild": "del _site/**/*",
     "build": "run-s sass:build 11ty:build",
     "postbuild": "run-s check:link",
