@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: mvion.fr
-Token: 95dd74b23c677c1af0fa1100b0bf342d45dc0b9b7281da70db8664c0befbcf82

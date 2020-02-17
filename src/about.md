@@ -58,6 +58,6 @@ Note de l'observatoire Mozilla : ![Mozilla HTTP Observatory Grade][observatory-b
 [reddit]: https://www.reddit.com
 [commits]: https://github.com/MattMattV/blog/commits/master
 
-[commit-badge]: https://img.shields.io/github/last-commit/MattMattV/blog.svg?logo=git&style=for-the-badge
-[build-badge]: https://img.shields.io/travis/com/MattMattV/blog.svg?logo=travis&style=for-the-badge
-[observatory-badge]: https://img.shields.io/mozilla-observatory/grade-score/blog.mvion.fr.svg?publish&style=for-the-badge
+[commit-badge]: https://img.shields.io/github/last-commit/MattMattV/website.svg?logo=git&style=for-the-badge
+[build-badge]: https://img.shields.io/travis/com/MattMattV/website.svg?logo=travis&style=for-the-badge
+[observatory-badge]: https://img.shields.io/mozilla-observatory/grade-score/mvion.fr.svg?publish&style=for-the-badge

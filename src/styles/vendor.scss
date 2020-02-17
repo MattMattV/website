@@ -1,1 +1,7 @@
+$font-prefix: '/node_modules/@ibm/plex';
 @import "sanitize";
+@import 'mono/index';
+@import 'sans/index';
+@import 'sans-condensed/index';
+@import 'serif/index';
+@import 'sans-arabic/index';

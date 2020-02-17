@@ -1,6 +1,5 @@
-@import "vendor.scss";
-
-@import "base.scss";
-@import "classes.scss";
-@import "images.scss";
-@import "projects.scss";
+@use "vendor.scss";
+@use "base.scss";
+@use "classes.scss";
+@use "images.scss";
+@use "projects.scss";

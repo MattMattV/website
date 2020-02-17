@@ -3,7 +3,7 @@ layout: projects/item
 tags: projects
 title: Mon propre site !
 name: This website
-repo: https://github.com/MattMattV/blog
+repo: https://github.com/MattMattV/website
 technologies:
     - name: Eleventy
       url: https://www.11ty.dev
