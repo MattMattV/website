@@ -11,10 +11,4 @@ technologies:
     - name: Angular
       url: https://angular.io
 wip: true
-wop: true
 ---
-a
-b
-c
-d
- f

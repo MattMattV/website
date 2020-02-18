@@ -12,4 +12,6 @@ Si vous cherchez :
 - un œil extérieur
 - un coup de main pour choisir une technologie ou un framework pour votre besoin
 
-N'hésitez pas à me contacter _via_ les liens en pied de page !
+Pour plus d'information sur moi et sur mes compétences vous pouvez consulter mon [CV](/cv)
+
+Et surtout n'hésitez pas à me contacter _via_ les liens en pied de page !
