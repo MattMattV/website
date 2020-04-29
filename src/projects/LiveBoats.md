@@ -25,4 +25,4 @@ Le tout affiché par dessus le flux de la caméra arrière pour la réalité aug
 Ce projet à été récompensé par le [prix AIVP][blog-aivp]. :trophy:
 
 [marine-traffic]: https://www.marinetraffic.com
-[blog-aivp]: https://www.aivp.org/2016/11/24/hackathon-lapplication-pour-observer-les-bateaux-primee-par-laivp/
+[blog-aivp]: https://web.archive.org/web/20190219122649/http://www.aivp.org/2016/11/24/hackathon-lapplication-pour-observer-les-bateaux-primee-par-laivp/
