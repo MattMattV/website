@@ -36,11 +36,11 @@ Motif d'arrière plan ["Topography"](https://www.heropatterns.com/) par [Steve S
 
 ## Les badges !
 
-Dernier commit sur le dépôt : ![badge indiquant le dernier commit sur le dépôt Git][commit-badge]
+Dernier commit sur le dépôt : [![badge indiquant le dernier commit sur le dépôt Git][commit-badge]][repo-github]
 
-Status de l'intégration continue : ![badge indiquant le status du dernier build Travis CI][build-badge]
+Status de l'intégration continue : [![badge indiquant le status du dernier build Travis CI][build-badge]][travis-ci]
 
-Note de l'observatoire Mozilla : ![Mozilla HTTP Observatory Grade][observatory-badge]
+Note de l'observatoire Mozilla : [![Mozilla HTTP Observatory Grade][observatory-badge]][mozilla-observatory]
 
 [gs]: https://www.greensystemes.com/
 [git]: https://git-scm.com/
@@ -57,6 +57,8 @@ Note de l'observatoire Mozilla : ![Mozilla HTTP Observatory Grade][observatory-b
 [steam]: https://steamcommunity.com/id/TheMattMatt
 [reddit]: https://www.reddit.com
 [commits]: https://github.com/MattMattV/blog/commits/master
+[travis-ci]: https://travis-ci.com/github/MattMattV/website
+[mozilla-observatory]: https://observatory.mozilla.org/analyze/mvion.fr
 
 [commit-badge]: https://img.shields.io/github/last-commit/MattMattV/website.svg?logo=git&style=for-the-badge
 [build-badge]: https://img.shields.io/travis/com/MattMattV/website.svg?logo=travis&style=for-the-badge
