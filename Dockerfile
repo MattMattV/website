@@ -9,6 +9,8 @@ RUN npm ci && \
 
 ############################
 
-FROM httpd
+FROM caddy:2
 
-COPY --from=build /home/builder/_site  /usr/local/apache2/htdocs/
+COPY ./Caddyfile /etc/caddy/Caddyfile
+
+COPY --from=build /home/builder/_site  /site
