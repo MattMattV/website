@@ -6,32 +6,35 @@
   "version": "1.0.0",
   "description": "Personal website",
   "dependencies": {
-    "@ibm/plex": "^4.0.2",
-    "sanitize.css": "^11.0.0",
+    "sanitize.css": "^11.0.1",
     "super-tiny-icons": "^0.3.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "del-cli": "^3.0.0",
-    "editorconfig-checker": "^3.0.4",
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "del-cli": "^3.0.1",
+    "editorconfig-checker": "^3.1.0",
     "hyperlink": "^4.5.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.26.5",
-    "tap-spec": "^5.0.0"
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.1",
+    "tap-spec-dot": "^0.1.3"
   },
   "scripts": {
     "11ty:serve": "eleventy --serve",
     "11ty:build": "eleventy",
-    "check:link": "hyperlink -r _site/index.html --canonicalroot https://mvion.fr | tap-spec || true",
     "lint:editorconfig": "editorconfig-checker",
-    "clean": "del _site/**/*",
-    "prebuild": "run-p clean lint:*",
-    "build": "run-s sass:build 11ty:build",
-    "postbuild": "run-s check:link",
-    "sass:build": "sass -I node_modules/@ibm/plex/scss -I node_modules/sanitize.css src/styles/_index.scss:_site/styles/index.css src/styles/cv.scss:_site/styles/cv.css --no-source-map",
-    "sass:watch": "sass --source-map --embed-sources --embed-source-map --error-css --watch -I node_modules/@ibm/plex/scss -I node_modules/sanitize.css src/styles/_index.scss:_site/styles/index.css src/styles/cv.scss:_site/styles/cv.css",
+    "lint:links": "hyperlink -r _site/index.html --canonicalroot https://mvion.fr | tap-spec-dot",
+    "clean": "del-cli '_site/**/*'",
+    "prebuild": "run-p clean lint:editorconfig",
+    "build": "run-s postcss:build 11ty:build",
+    "postbuild": "run-s lint:links",
+    "postcss:build": "postcss src/styles.css src/cv.css --dir _site",
+    "postcss:watch": "postcss --verbose --watch src/styles.css src/cv.css --dir _site",
     "prewatch": "run-s clean",
-    "watch": "run-p 11ty:serve sass:watch"
+    "watch": "run-p 11ty:serve postcss:watch"
   },
   "keywords": [
     "eleventy"

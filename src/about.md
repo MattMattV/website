@@ -22,7 +22,6 @@ Ce site est généré grâce à [Eleventy][11ty].
 
 Ce site dépend des briques logicielles suivantes :
 
-- [@ibm/plex][plex-font]
 - [sanitize.css][sanitize]
 - [super-tiny-icons][STI]
 
