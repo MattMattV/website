@@ -1,4 +1,4 @@
-http://localhost
+http://
 
 root * /site
 file_server
