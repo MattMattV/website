@@ -2,3 +2,5 @@ http://
 
 root * /site
 file_server
+
+header Vary Accept-Encoding
