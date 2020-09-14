@@ -1,4 +1,7 @@
-fail_fast: true
+language: node_js
+os:
+  - linux
+dist: focal
 
 services:
   - docker
