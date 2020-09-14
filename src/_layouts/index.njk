@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="google-site-verification" content="{{ site.seo.googleVerification }}" />
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src https:">-->
+
+        {% if env.environment == "production" %}
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self'; frame-src 'self'; img-src 'self' https://img.shields.io; manifest-src 'self'; media-src 'self'; worker-src 'none';">
+        {% endif %}
 
         {% include "favicons.html" %}
 
