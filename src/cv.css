@@ -2,15 +2,11 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 12pt;
     text-align: justify;
-    background-color: #303030;
-    background-image: url('/svg/topography.svg');
-    background-repeat: repeat;
-    color: white;
 }
 
 h1 {
     font-size: 20pt;
-    border-bottom: 2px solid white;
+    border-bottom: 8px solid #383F51;
 }
 
 h2 {
@@ -19,7 +15,7 @@ h2 {
 
 .page {
     margin: auto;
-    width: 768px;
+    width: 29.7cm;
     display: flex;
     flex-direction: row;
 }
@@ -40,7 +36,7 @@ h2 {
     align-items: stretch;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #4799f9a0;
+    background-color: #4799f9;
 
     & h2 {
         border-bottom: 2px solid white;

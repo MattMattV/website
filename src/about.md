@@ -8,7 +8,7 @@ description: Quelques informations à propos de moi et du blog.
 
 <img alt="Portrait en noir et blanc de Matthieu Vion" class="portrait" src="/img/about/matthieu.jpg">
 
-👋 Développeur de profession, je suis un grand curieux, avide de connaissance toujours à l'affût. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautées que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
+👋 Développeur de profession, je suis un grand curieux, avide de connaissance toujours à l'affût. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautés que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
 
 Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img class="tiny-icon" alt="Logo de Steam" src="/svg/steam.svg">), j'aime me balader sur [Reddit][reddit], les après-midi tranquilles et les thèmes sombres.
 
@@ -37,7 +37,7 @@ Motif d'arrière plan ["Topography"](https://www.heropatterns.com/) par [Steve S
 
 Dernier commit sur le dépôt : [![badge indiquant le dernier commit sur le dépôt Git][commit-badge]][repo-github]
 
-Status de l'intégration continue : [![badge indiquant le status du dernier build Travis CI][build-badge]][travis-ci]
+Statut de l'intégration continue : [![badge indiquant le statut du dernier build Travis CI][build-badge]][travis-ci]
 
 Note de l'observatoire Mozilla : [![Mozilla HTTP Observatory Grade][observatory-badge]][mozilla-observatory]
 

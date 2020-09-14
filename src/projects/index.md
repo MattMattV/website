@@ -4,7 +4,7 @@ layout: projects/list
 
 # Projets
 
-Retrouvez sur cette page les projets sur lesquel j'ai pu travailler !
+Retrouvez sur cette page les projets sur lesquels j'ai pu travailler !
 
 Si vous cherchez :
 
