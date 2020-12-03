@@ -6,35 +6,40 @@
   "version": "1.0.0",
   "description": "Personal website",
   "dependencies": {
+    "eleventy-critical-css": "^0.1.2",
     "sanitize.css": "^12.0.1",
-    "super-tiny-icons": "^0.3.2"
+    "simple-icons": "^4.0.1",
+    "super-tiny-icons": "^0.4.0",
+    "water.css": "^2.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.0.4",
     "cssnano": "^4.1.10",
     "del-cli": "^3.0.1",
     "editorconfig-checker": "^3.3.0",
-    "hyperlink": "^4.5.3",
+    "hyperlink": "^4.6.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.1.0",
+    "postcss-cli": "^8.3.0",
     "postcss-import": "^13.0.0",
     "postcss-nesting": "^7.0.1",
+    "puppeteer": "^5.5.0",
+    "sirv-cli": "^1.0.7",
     "tap-spec-dot": "^0.1.4"
   },
   "scripts": {
     "11ty:serve": "eleventy --serve",
     "11ty:build": "eleventy",
+    "serveAndGenerateResume": "npm-run-all -r -p serve generate:resume ",
+    "generate:resume": "node scripts/render-resume.js",
     "lint:editorconfig": "editorconfig-checker",
     "lint:links": "hyperlink -r _site/index.html --canonicalroot https://mvion.fr | tap-spec-dot",
     "clean": "del-cli '_site/**/*'",
-    "prebuild": "run-p clean lint:editorconfig",
-    "build": "ELEVENTY_ENV=production run-s postcss:build 11ty:build",
-    "postbuild": "run-s lint:links",
+    "build": "ELEVENTY_ENV=production npm-run-all -s clean lint:editorconfig postcss:build 11ty:build lint:links",
     "postcss:build": "postcss src/styles.css src/cv.css --dir _site",
     "postcss:watch": "postcss --verbose --watch src/styles.css src/cv.css --dir _site",
-    "prewatch": "run-s clean",
-    "watch": "run-p 11ty:serve postcss:watch"
+    "serve": "sirv _site",
+    "watch": "npm-run-all -s clean -p 11ty:serve postcss:watch"
   },
   "keywords": [
     "eleventy"
