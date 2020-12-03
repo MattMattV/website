@@ -1,32 +1,59 @@
+@import "sanitize.css";
+
 body {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 12pt;
+    font-family: "IBM Plex Sans", "Noto Color Emoji", sans-serif;
     text-align: justify;
+    margin: auto;
+    width: 210mm; 
+    display: flex;
+    align-items: stretch;
+}
+
+@media screen {
+    .sheet {
+        background: white;
+        box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+        margin: 5mm auto;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+        height: 297mm;
+    }
 }
 
 h1 {
-    font-size: 20pt;
+    font-size: 20px;
     border-bottom: 8px solid #383F51;
 }
 
 h2 {
-    font-size: 14pt;
+    font-size: 18px;
+    margin-block-start: 0.6em;
+    margin-block-end: 0;
 }
 
-.page {
-    margin: auto;
-    width: 29.7cm;
+p {
+    font-size: 14px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+@page {
+    margin: 0;
+}
+
+.sheet {
     display: flex;
-    flex-direction: row;
+    align-items: stretch;
 }
 
 .portrait {
-    width: 60%;
+    width: 70%;
     clip-path: circle(50% at 50% 50%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 5px auto;
 }
 
 .first-column {
@@ -36,14 +63,16 @@ h2 {
     align-items: stretch;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #4799f9;
+    background-color: #7EB9FB;
 
     & h2 {
         border-bottom: 2px solid white;
     }
 
     & hr {
-        width: 85%;
+        border-style: solid;
+        color: white;
+        width: 95%;
     }
 
     & p {
@@ -56,7 +85,7 @@ h2 {
     }
 
     & .role {
-        font-size: 18pt;
+        font-size: 22px;
     }
 
     & .social {
@@ -73,8 +102,7 @@ h2 {
             margin-top: 10px;
         }
 
-        & p, a {
-            font-size: 12pt;
+        & p a {
             margin-top: auto;
             margin-bottom: auto;
         }
@@ -98,7 +126,6 @@ h2 {
             margin: 5px 2px;
             padding: 5px;
             border-radius: 5px;
-            font-size: initial;
         }
     }
 
@@ -113,7 +140,10 @@ h2 {
     width: 70%;
     padding-left: 2%;
 
+    font-size: smaller;
+
     & ul {
+        margin-right: 1em;
         padding-left: 0;
         list-style: none;
     }
@@ -122,33 +152,28 @@ h2 {
         & h3 {
             margin-bottom: 0;
         }
-
-        & li p {
-            margin-top: 0.5em;
-            margin-bottom: 0;
-        }
     }
 }
 
 .skill-list {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 30px);
+    justify-items: center;
+    row-gap: 10px;
 
-    & div {
+    & div {    
         justify-self: stretch;
 
         display: flex;
         flex-direction: row;
-
-        margin-bottom: 15px;
-
 
         & img {
             margin-right: 10px;
         }
 
         & p {
+            align-self: center;
             margin-top: auto;
             margin-bottom: auto;
         }
@@ -160,5 +185,6 @@ h2 {
 }
 
 .skill-icon {
-    height: 25pt;
+    align-self: center;
+    height: 25px;
 }

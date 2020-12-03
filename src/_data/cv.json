@@ -1,0 +1,80 @@
+{
+    "contact": {
+        "email": "work@mvion.fr"
+    },
+    "experiences": {
+        "professional": [
+            {
+                "title": "CodeMentor",
+                "start": "09/2020",
+                "end": null,
+                "description": [
+                    "Missions de développment, de conseils techniques et projets sur le long terme."
+                ]
+            },
+            {
+                "title": "Green Systèmes",
+                "start": "01/2020",
+                "end": null,
+                "description": [
+                    "Intégration et amélioration sur le site vitrine.",
+                    "Ajout de nouvelles sources de données",
+                    "Amélioration des APIs existantes."
+                ]
+            },
+            {
+                "title": "Trace Software",
+                "start": "02/2016",
+                "end": "01/2020",
+                "description": [
+                    "Développment front end et back end",
+                    "R&D et architecture pour un projet micro-services avec Docker.",
+                    "Mise en place de tests d'intégration et unitaires au sein de GitLab CI."
+                ]
+            }
+        ],
+        "personal": [
+            {
+                "title": "Hackathon Tourisme",
+                "city": "Deauville",
+                "year": "2019",
+                "description": [
+                    "Prototypage d'une application mobile pour aider les touristes à signaler les éventuels problèmes qu'ils pourraient rencontrer lors de leur séjour."
+                ]
+            },
+            {
+                "title": "Hackathon Smart Port Vallée de la Seine",
+                "city": "Le Havre",
+                "year": "2016",
+                "description": [
+                    "Prototypage d'une application mobile utilisant la réalité augmentée pour visualiser les données des bateaux autour de l'utilisateur. Notre éqipe à remporté le prix AIVP."
+                ]
+            }
+        ]
+    },
+    "education": [
+        {
+            "name": "DUT Informatique",
+            "year": "2016",
+            "address": "IUT de Caucriauville 76600 Le Havre"
+        },
+        {
+            "name": "Baccalauréat STI2D",
+            "year": "2013",
+            "option": "Option SIN (Système d'Information et Numérique)",
+            "address": "LGT Modeste Leroy 27000 Evreux "
+        }
+    ],
+    "hobbys": {
+        "🧑‍💻": "Informatique",
+        "🧪": "Sciences",
+        "🎮": "Jeux Vidéos",
+        "⌨": "Claviers mécaniques"
+    },
+    "values": [
+        "Déterminé",
+        "Dynamique",
+        "Impliqué",
+        "Fiable"
+    ]
+}
