@@ -3,3 +3,13 @@
     padding-right: 5px;
     border: 1px solid #e65100;
 }
+
+.portrait {
+    float: left;
+    height: 10rem;
+    margin-right: 1rem;
+}
+
+.tiny-icon {
+    height: 1em;
+}

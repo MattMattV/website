@@ -10,7 +10,7 @@ description: Quelques informations à propos de moi et du blog.
 
 👋 Développeur de profession, je suis un grand curieux, avide de connaissance toujours à l'affût. J'essaie de répandre la bonne parole autour de GNU/Linux, du logiciel libre, de l'auto-hébergement. J'essaie de rester à l'affût des nouveautés que ce soit dans le domaine de l'informatique, des nouvelles technologies, de la science ou encore de l'automobile.
 
-Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img class="tiny-icon" alt="Logo de Steam" src="/svg/steam.svg">), j'aime me balader sur [Reddit][reddit], les après-midi tranquilles et les thèmes sombres.
+Passionné de jeux vidéos (comme en atteste mon profil [Steam][steam] <img class="tiny-icon" alt="Logo de Steam" src="/svg/super-tiny-icons/steam.svg">), j'aime me balader sur [Reddit][reddit], les après-midi tranquilles et les thèmes sombres.
 
 # À propos du blog
 
