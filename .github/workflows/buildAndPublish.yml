@@ -24,7 +24,6 @@ jobs:
         with:
           build_dir: _site
           fqdn: mvion.fr
-          keep_history: true
           target_branch: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
