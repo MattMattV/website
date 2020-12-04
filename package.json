@@ -33,7 +33,7 @@
     "serveAndGenerateResume": "npm-run-all -r -p serve generate:resume ",
     "generate:resume": "node scripts/render-resume.js",
     "lint:editorconfig": "editorconfig-checker",
-    "lint:links": "hyperlink -r _site/index.html --canonicalroot https://mvion.fr | tap-spec-dot",
+    "lint:links": "hyperlink -p -r _site/index.html --canonicalroot https://mvion.fr",
     "clean": "del-cli '_site/**/*'",
     "build": "ELEVENTY_ENV=production npm-run-all -s clean lint:editorconfig postcss:build 11ty:build lint:links",
     "postcss:build": "postcss src/styles.css src/cv.css --dir _site",

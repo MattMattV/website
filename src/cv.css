@@ -15,6 +15,10 @@ body {
         box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
         margin: 5mm auto;
     }
+
+    .skill-list {
+        margin-bottom: 15px;
+    }
 }
 
 @media print {
