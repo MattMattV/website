@@ -30,8 +30,8 @@
   "scripts": {
     "11ty:serve": "eleventy --serve",
     "11ty:build": "eleventy",
-    "serveAndGenerateResume": "npm-run-all -r -p serve generate:resume ",
-    "generate:resume": "node scripts/render-resume.js",
+    "generate:resume": "npm-run-all -r -p serve pupeteer:resume",
+    "pupeteer:resume": "node scripts/render-resume.js",
     "lint:editorconfig": "editorconfig-checker",
     "lint:links": "hyperlink -p -r _site/index.html --canonicalroot https://mvion.fr",
     "clean": "del-cli '_site/**/*'",
