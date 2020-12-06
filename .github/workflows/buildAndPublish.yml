@@ -19,7 +19,7 @@ jobs:
       - name: build website
         run: npm run build
       - name: generate resume in PDF
-        run: npm run
+        run: npm run generate:resume
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
